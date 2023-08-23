@@ -1,0 +1,537 @@
+{
+    "liveList": [
+        {
+            "id": 15,
+            "start_date": "2022-09-18 00:00:00",
+            "end_date": "2030-11-19 00:00:00",
+            "category_id": 4,
+            "tournament_id": 3,
+            "team1_id": 20,
+            "team2_id": 20,
+            "name": "",
+            "name_slug": "",
+            "slug": "Athletic Club-vs-Valladolid",
+            "status": 1,
+            "team1": "Athletic Club",
+            "team1_img": "images/atheletic club.png",
+            "team2": "Valladolid",
+            "team2_img": "images/valladolic.png",
+            "game_category": {
+                "id": 4,
+                "name": "La-Liga",
+                "slug": "la-liga",
+                "icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>"
+            },
+            "game_tournament": {
+                "id": 3,
+                "name": "La Liga",
+                "slug": "La Liga"
+            },
+            "totalQuestion": 3,
+            "questions": [
+                {
+                    "id": 35,
+                    "name": "Who will win?",
+                    "limit": 100,
+                    "end_time": "2030-07-19 11:12:00",
+                    "is_unlock": 0,
+                    "status": 1,
+                    "options": [
+                        {
+                            "id": 75,
+                            "match_id": 15,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Athletic Club vs Valladolid",
+                            "question_id": 35,
+                            "question_name": "Who will win?",
+                            "option_name": "Athletic Club",
+                            "ratio": 1,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        },
+                        {
+                            "id": 76,
+                            "match_id": 15,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Athletic Club vs Valladolid",
+                            "question_id": 35,
+                            "question_name": "Who will win?",
+                            "option_name": "Draw",
+                            "ratio": 2.2,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        },
+                        {
+                            "id": 77,
+                            "match_id": 15,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Athletic Club vs Valladolid",
+                            "question_id": 35,
+                            "question_name": "Who will win?",
+                            "option_name": "Valladolid",
+                            "ratio": 2,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 36,
+                    "name": "Athletic Club Will Goal ?",
+                    "limit": 100,
+                    "end_time": "2030-07-19 11:12:00",
+                    "is_unlock": 0,
+                    "status": 1,
+                    "options": [
+                        {
+                            "id": 78,
+                            "match_id": 15,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Athletic Club vs Valladolid",
+                            "question_id": 36,
+                            "question_name": "Athletic Club Will Goal ?",
+                            "option_name": "under 1",
+                            "ratio": 1,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        },
+                        {
+                            "id": 79,
+                            "match_id": 15,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Athletic Club vs Valladolid",
+                            "question_id": 36,
+                            "question_name": "Athletic Club Will Goal ?",
+                            "option_name": "under 2",
+                            "ratio": 2.3,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        },
+                        {
+                            "id": 80,
+                            "match_id": 15,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Athletic Club vs Valladolid",
+                            "question_id": 36,
+                            "question_name": "Athletic Club Will Goal ?",
+                            "option_name": "over 2",
+                            "ratio": 2,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 48,
+                    "name": "Valladolid score?",
+                    "limit": 100,
+                    "end_time": "2031-06-21 15:41:00",
+                    "is_unlock": 0,
+                    "status": 1,
+                    "options": [
+                        {
+                            "id": 115,
+                            "match_id": 15,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Athletic Club vs Valladolid",
+                            "question_id": 48,
+                            "question_name": "Valladolid score?",
+                            "option_name": "under 1",
+                            "ratio": 1.4,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        },
+                        {
+                            "id": 116,
+                            "match_id": 15,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Athletic Club vs Valladolid",
+                            "question_id": 48,
+                            "question_name": "Valladolid score?",
+                            "option_name": "under 2",
+                            "ratio": 1.6,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        },
+                        {
+                            "id": 117,
+                            "match_id": 15,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Athletic Club vs Valladolid",
+                            "question_id": 48,
+                            "question_name": "Valladolid score?",
+                            "option_name": "over 2",
+                            "ratio": 1.8,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "start_date": "2022-09-22 00:00:00",
+            "end_date": "2027-01-10 00:00:00",
+            "category_id": 4,
+            "tournament_id": 3,
+            "team1_id": 21,
+            "team2_id": 21,
+            "name": "",
+            "name_slug": "",
+            "slug": "girona-vs-atlético madrid",
+            "status": 1,
+            "team1": "Girona",
+            "team1_img": "images/girona.png",
+            "team2": "Atlético Madrid",
+            "team2_img": "images/atletico madrid.png",
+            "game_category": {
+                "id": 4,
+                "name": "La-Liga",
+                "slug": "la-liga",
+                "icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>"
+            },
+            "game_tournament": {
+                "id": 3,
+                "name": "La Liga",
+                "slug": "La Liga"
+            },
+            "totalQuestion": 2,
+            "questions": [
+                {
+                    "id": 17,
+                    "name": "Who Win?",
+                    "limit": 100,
+                    "end_time": "2030-06-19 13:44:00",
+                    "is_unlock": 0,
+                    "status": 1,
+                    "options": [
+                        {
+                            "id": 21,
+                            "match_id": 10,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Girona vs Atlético Madrid",
+                            "question_id": 17,
+                            "question_name": "Who Win?",
+                            "option_name": "Girona",
+                            "ratio": 1.6,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        },
+                        {
+                            "id": 22,
+                            "match_id": 10,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Girona vs Atlético Madrid",
+                            "question_id": 17,
+                            "question_name": "Who Win?",
+                            "option_name": "Draw",
+                            "ratio": 0.6,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        },
+                        {
+                            "id": 23,
+                            "match_id": 10,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Girona vs Atlético Madrid",
+                            "question_id": 17,
+                            "question_name": "Who Win?",
+                            "option_name": "Atlético Madrid",
+                            "ratio": 1,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 18,
+                    "name": "Salah Goal?",
+                    "limit": 100,
+                    "end_time": "2030-06-19 13:44:00",
+                    "is_unlock": 0,
+                    "status": 1,
+                    "options": [
+                        {
+                            "id": 24,
+                            "match_id": 10,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Girona vs Atlético Madrid",
+                            "question_id": 18,
+                            "question_name": "Salah Goal?",
+                            "option_name": "1",
+                            "ratio": 0.3,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        },
+                        {
+                            "id": 25,
+                            "match_id": 10,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Girona vs Atlético Madrid",
+                            "question_id": 18,
+                            "question_name": "Salah Goal?",
+                            "option_name": "2",
+                            "ratio": 0.6,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        },
+                        {
+                            "id": 26,
+                            "match_id": 10,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Girona vs Atlético Madrid",
+                            "question_id": 18,
+                            "question_name": "Salah Goal?",
+                            "option_name": "3",
+                            "ratio": 1.4,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "start_date": "2022-10-06 00:00:00",
+            "end_date": "2027-10-10 00:00:00",
+            "category_id": 4,
+            "tournament_id": 3,
+            "team1_id": 19,
+            "team2_id": 19,
+            "name": "",
+            "name_slug": "",
+            "slug": "barcelona-vs-real madrid",
+            "status": 1,
+            "team1": "Barcelona",
+            "team1_img": "images/barcelona.png",
+            "team2": "Real Madrid",
+            "team2_img": "images/real madrid.png",
+            "game_category": {
+                "id": 4,
+                "name": "La-Liga",
+                "slug": "la-liga",
+                "icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>"
+            },
+            "game_tournament": {
+                "id": 3,
+                "name": "La Liga",
+                "slug": "La Liga"
+            },
+            "totalQuestion": 3,
+            "questions": [
+                {
+                    "id": 53,
+                    "name": "Who will win?",
+                    "limit": 100,
+                    "end_time": "2032-05-21 15:47:00",
+                    "is_unlock": 0,
+                    "status": 1,
+                    "options": [
+                        {
+                            "id": 130,
+                            "match_id": 11,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Barcelona vs Real Madrid",
+                            "question_id": 53,
+                            "question_name": "Who will win?",
+                            "option_name": "Barcelona",
+                            "ratio": 1.4,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        },
+                        {
+                            "id": 131,
+                            "match_id": 11,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Barcelona vs Real Madrid",
+                            "question_id": 53,
+                            "question_name": "Who will win?",
+                            "option_name": "Draw",
+                            "ratio": 1.6,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        },
+                        {
+                            "id": 132,
+                            "match_id": 11,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Barcelona vs Real Madrid",
+                            "question_id": 53,
+                            "question_name": "Who will win?",
+                            "option_name": "Real Madrid",
+                            "ratio": 2,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 54,
+                    "name": "Barcelona will score?",
+                    "limit": 100,
+                    "end_time": "2032-05-21 15:47:00",
+                    "is_unlock": 0,
+                    "status": 1,
+                    "options": [
+                        {
+                            "id": 133,
+                            "match_id": 11,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Barcelona vs Real Madrid",
+                            "question_id": 54,
+                            "question_name": "Barcelona will score?",
+                            "option_name": "under 2",
+                            "ratio": 1.4,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        },
+                        {
+                            "id": 134,
+                            "match_id": 11,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Barcelona vs Real Madrid",
+                            "question_id": 54,
+                            "question_name": "Barcelona will score?",
+                            "option_name": "under 4",
+                            "ratio": 1.6,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        },
+                        {
+                            "id": 135,
+                            "match_id": 11,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Barcelona vs Real Madrid",
+                            "question_id": 54,
+                            "question_name": "Barcelona will score?",
+                            "option_name": "over 4",
+                            "ratio": 2,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        }
+                    ]
+                },
+                {
+                    "id": 55,
+                    "name": "man of the match",
+                    "limit": 100,
+                    "end_time": "2032-05-21 15:47:00",
+                    "is_unlock": 0,
+                    "status": 1,
+                    "options": [
+                        {
+                            "id": 136,
+                            "match_id": 11,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Barcelona vs Real Madrid",
+                            "question_id": 55,
+                            "question_name": "man of the match",
+                            "option_name": "neymar",
+                            "ratio": 3.4,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        },
+                        {
+                            "id": 137,
+                            "match_id": 11,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Barcelona vs Real Madrid",
+                            "question_id": 55,
+                            "question_name": "man of the match",
+                            "option_name": "messi",
+                            "ratio": 2.6,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        },
+                        {
+                            "id": 138,
+                            "match_id": 11,
+                            "category_name": "Football",
+                            "category_icon": "<i class=\"far fa-futbol\" aria-hidden=\"true\"><\/i>",
+                            "tournament_name": "La Liga",
+                            "match_name": "Barcelona vs Real Madrid",
+                            "question_id": 55,
+                            "question_name": "man of the match",
+                            "option_name": "none",
+                            "ratio": 1,
+                            "is_unlock_question": 0,
+                            "is_unlock_match": 0,
+                            "status": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

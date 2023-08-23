@@ -1,0 +1,731 @@
+<div class="bottom-bar fixed-bottom text-center">
+    <a routerLink="/" class="text-dark">
+        <i class="fa fa-home"></i>
+        Home
+    </a>
+    <a href="javascript:void(0)" class="text-dark" (click)="toggleSidebar('leftbar')">
+        <i class="far fa-globe-americas"></i>
+        Sports
+    </a>
+
+    <a href="javascript:void(0)" class="text-dark" (click)="toggleSidebar('rightbar')">
+        <i class="fal fa-ticket-alt"></i>
+        Bet Slip
+    </a>
+
+    <a routerLink="/login" class="text-dark">
+        <i class="fa fa-sign-in"></i>
+        Login
+    </a>
+</div>
+<!-- wrapper -->
+<div class="wrapper" id="getMatchList" >
+    <!-- leftbar -->
+    <div class="leftbar" id="leftbar">
+        <div class="px-1 mt-2 d-lg-none">
+            <button class="remove-class-btn light btn-custom" (click)="toggleSidebar('leftbar')">
+                <i class="fal fa-chevron-left"></i> Back
+            </button>
+        </div>
+        <div class="top p-1 d-flex">
+            <button (click)="liveUpComing('live')" type="button" [ngClass]="showType == 'live' ? 'light' : ''"
+                class="btn-custom me-1">
+                <i class="las la-podcast"></i>
+                Live
+            </button>
+            <button (click)="liveUpComing('upcoming')" type="button" [ngClass]="showType == 'upcoming' ? 'light' : ''"
+                class="btn-custom">
+                <i class="las la-meteor"></i>
+                Upcoming
+            </button>
+        </div>
+        <ul class="main">
+            <li>
+                <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <i class="far fa-globe-americas"></i> <span>All Sports</span>
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-toggle" data-bs-toggle="collapse" href="#collapse4" role="button"
+                    aria-expanded="true" aria-controls="collapseExample">
+                    <i class="far fa-futbol" aria-hidden="true"></i>Football
+                    <span class="count"><span class="font-italic">(9)</span></span>
+                </a>
+                <!-- dropdown item -->
+
+                <div class="collapse show" id="collapse4">
+                    <ul class="">
+                        <li>
+                            <a routerLink="/1/1" routerLinkActive="active" class="sidebar-link">
+                                <i class="far fa-hand-point-right"></i> UEFA</a>
+                        </li>
+                        <li>
+                            <a routerLink="/1/2" class="sidebar-link">
+                                <i class="far fa-hand-point-right"></i> La Liga</a>
+                        </li>
+                        <li>
+                            <a routerLink="/1/3" class="sidebar-link">
+                                <i class="far fa-hand-point-right"></i> Bundesliga</a>
+                        </li>
+                        <li>
+                            <a routerLink="/1/4" class="sidebar-link">
+                                <i class="far fa-hand-point-right"></i> World Cup</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="dropdown-toggle" data-bs-toggle="collapse" href="#collapse26" role="button"
+                    aria-expanded="true" aria-controls="collapseExample">
+                    <i class="far fa-cricket" aria-hidden="true"></i>Cricket
+                    <span class="count"><span class="font-italic">(5)</span></span>
+                </a>
+                <!-- dropdown item -->
+
+                <div class="collapse" id="collapse26">
+                    <ul class="">
+                        <li>
+                            <a routerLink="/2/5" class="sidebar-link">
+                                <i class="far fa-hand-point-right"></i> IPL</a>
+                        </li>
+                        <li>
+                            <a routerLink="/2/6" class="sidebar-link">
+                                <i class="far fa-hand-point-right"></i> World Cup</a>
+                        </li>
+                        <li>
+                            <a routerLink="/2/7" class="sidebar-link">
+                                <i class="far fa-hand-point-right"></i> Big Bash</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="dropdown-toggle" data-bs-toggle="collapse" href="#collapse3" role="button"
+                    aria-expanded="true" aria-controls="collapseExample">
+                    <i class="far fa-shuttlecock" aria-hidden="true"></i>Badminton
+                    <span class="count"><span class="font-italic">(0)</span></span>
+                </a>
+                <!-- dropdown item -->
+
+                <div class="collapse" id="collapse3">
+                    <ul class="">
+                        <li>
+                            <a routerLink="/3/8" class="sidebar-link">
+                                <i class="far fa-hand-point-right"></i> World Cup</a>
+                        </li>
+                        <li>
+                            <a routerLink="/3/9" class="sidebar-link">
+                                <i class="far fa-hand-point-right"></i> BWF Uber Cup</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="dropdown-toggle" data-bs-toggle="collapse" href="#collapse5" role="button"
+                    aria-expanded="true" aria-controls="collapseExample">
+                    <i class="far fa-chess" aria-hidden="true"></i>Chess
+                    <span class="count"><span class="font-italic">(0)</span></span>
+                </a>
+                <!-- dropdown item -->
+
+                <div class="collapse" id="collapse5">
+                    <ul class="">
+                        <li>
+                            <a routerLink="/4/10" class="sidebar-link">
+                                <i class="far fa-hand-point-right"></i> World Cup</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="dropdown-toggle" data-bs-toggle="collapse" href="#collapse6" role="button"
+                    aria-expanded="true" aria-controls="collapseExample">
+                    <i class="far fa-basketball-ball" aria-hidden="true"></i>Basketball
+                    <span class="count"><span class="font-italic">(0)</span></span>
+                </a>
+                <!-- dropdown item -->
+
+                <div class="collapse" id="collapse6">
+                    <ul class="">
+                        <li>
+                            <a routerLink="/5/11" class="sidebar-link">
+                                <i class="far fa-hand-point-right"></i> Ball on track</a>
+                        </li>
+                        <li>
+                            <a routerLink="/5/12" class="sidebar-link">
+                                <i class="far fa-hand-point-right"></i> Basketball League</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="dropdown-toggle" data-bs-toggle="collapse" href="#collapse7" role="button"
+                    aria-expanded="true" aria-controls="collapseExample">
+                    <i class="far fa-field-hockey" aria-hidden="true"></i>Hockey
+                    <span class="count"><span class="font-italic">(0)</span></span>
+                </a>
+                <!-- dropdown item -->
+
+                <div class="collapse" id="collapse7">
+                    <ul class="">
+                        <li>
+                            <a routerLink="/6/13" class="sidebar-link">
+                                <i class="far fa-hand-point-right"></i> Asia Cup</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <div class="bottom p-1">
+            <a routerLink="/result" class="btn-custom light w-100">results</a>
+        </div>
+    </div>
+
+    <!-- rightbar -->
+    <div class="rightbar" id="rightbar">
+        <div class="my-1 d-lg-none">
+            <button class="remove-class-btn light btn-custom" (click)="toggleSidebar('rightbar')">
+                <i class="fal fa-chevron-left"></i> Back
+            </button>
+        </div>
+        <div class="top mb-3 d-flex">
+            <button class="me-1 btn-custom" (click)="showMyBets = false" [ngClass]="!showMyBets ? '' :'light'">
+                <i class="fas fa-podcast"></i>
+                bet slip
+            </button>
+            <button class="btn-custom" (click)="showMyBets = true" [ngClass]="showMyBets ? '' :'light'">
+                <i class="fas fa-meteor"></i>
+                my bets
+            </button>
+        </div>
+
+        <div *ngIf="betSlip.length && !showMyBets">
+            <div class="mb-2">
+                <div class="d-flex justify-content-between">
+                    <p class="mb-0">Your Bets {{ betSlip.length }}</p>
+
+                    <div class="dropdown">
+                        <button class="dropdown-toggle">
+                            <i class="fal fa-cog"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" />
+                                <label class="form-check-label" for="flexCheckChecked3">
+                                    Default checkbox
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Checked checkbox
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" />
+                                <label class="form-check-label" for="flexCheckChecked2">
+                                    Checked checkbox
+                                </label>
+                            </div>
+                            <button class="btn-custom w-100">save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div *ngFor="let item of betSlip" class="bet-box mb-2"
+                [ngClass]="{'bet-box-disable':(item.is_unlock_match == 1 || item.is_unlock_question == 1)}">
+                <p class="series d-flex align-items-start">
+                    <span>
+                        <span v-html="item.category_icon"></span> {{
+                        item.tournament_name }}
+                    </span>
+                    <button type="button" (click)="removeItem(item)" class="close-btn">
+                        <i class="fal fa-times"></i>
+                    </button>
+                </p>
+
+                <p class="teams">{{item.match_name}}</p>
+                <p>
+                    <span class="badge">{{ item.ratio }}</span>
+                    <span>{{item.question_name}}
+                        <small>{{item.option_name}}</small>
+                    </span>
+                </p>
+
+                <p *ngIf="item.is_unlock_match == 1 || item.is_unlock_question == 1" class="text-center">
+                    <i class="fas fa-hourglass-end"></i>Expired
+                </p>
+            </div>
+
+            <div class="mb-3">
+                <p class="mb-1">
+                    Overall Odds <span class="float-end">{{ totalOdds.toFixed(2) }}</span>
+                </p>
+                <p class="mb-1">
+                    Minium stake amount
+                    <span class="float-end">{{ minimum_bet }} {{ currency }}</span>
+                </p>
+                <p class="mb-1">
+                    Charge Apply <small> (IF YOU WIN) </small><span class="float-end">{{win_charge}}%</span>
+                </p>
+
+                <p class="mb-1">
+                    Potential Winnings
+                    <span class="float-end">{{ return_amount }} {{ currency }}</span>
+                </p>
+            </div>
+
+            <div class="input-group inc-dec mb-3">
+                <button type="button" class="decrement btn-custom" (click)="decrement()">
+                    -
+                </button>
+                <input class="form-control" value="1" [(ngModel)]="formAmount" #ctrl="ngModel"
+                    (keyup)="calc(formAmount)" type="number" data-zeros="true" :max="999999" />
+                <button type="button" class="increment btn-custom" (click)="increment()">
+                    +
+                </button>
+            </div>
+            <button type="button" (click)="betPlace()" class="btn-custom w-100">
+                place bet
+            </button>
+        </div>
+        <div *ngIf="myBets.length && showMyBets">
+            <div *ngFor="let bet of myBets">
+                <div class="mb-2">
+                    <div class="d-flex justify-content-between">
+                        <p class="mb-0">Your Bets {{ bet.slip.length }}</p>
+                    </div>
+                </div>
+                <div *ngFor="let item of bet.slip" class="bet-box mb-2"
+                    [ngClass]="{'bet-box-disable':(item.is_unlock_match == 1 || item.is_unlock_question == 1)}">
+                    <p class="series d-flex align-items-start">
+                        <span>
+                            <span v-html="item.category_icon"></span> {{
+                            item.tournament_name }}
+                        </span>
+                    </p>
+
+                    <p class="teams">{{item.match_name}}</p>
+                    <p>
+                        <span class="badge">{{ item.ratio }}</span>
+                        <span>{{item.question_name}}
+                            <small>{{item.option_name}}</small>
+                        </span>
+                    </p>
+
+                    <p *ngIf="item.is_unlock_match == 1 || item.is_unlock_question == 1" class="text-center">
+                        <i class="fas fa-hourglass-end"></i>Expired
+                    </p>
+                </div>
+
+                <div class="mb-3">
+                    <p class="mb-1">
+                        Overall Odds <span class="float-end">{{ this.oddsCalc(this.bet.slip).toFixed(2) }}</span>
+                    </p>
+                    <p class="mb-1">
+                        Maximum stake amount
+                        <span class="float-end">{{ minimum_bet }} {{ currency }}</span>
+                    </p>
+                    <p class="mb-1">
+                        Charge Apply <small> (IF YOU WIN) </small><span class="float-end">{{win_charge}}%</span>
+                    </p>
+
+                    <p class="mb-1">
+                        Potential Winnings
+                        <span class="float-end">{{ calcReturnAmount(bet.amount,bet.slip) }} {{ currency }}</span>
+                    </p>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <!-- contents -->
+    <div class="content">
+        <!-- slider -->
+        <div class="skitter-large-box">
+            <div class="skitter skitter-large with-dots">
+                <ul>
+                    <li>
+                        <a href="/">
+                            <img src="assets/images/slide-1.jpg" class="downBars" />
+                        </a>
+                        <div class="label_text">
+                            <h2>Football</h2>
+                            <p class="mb-4"></p>
+                            <a href="/"><button class="btn-custom">place a bet</button></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <img src="assets/images/slide-2.png" class="downBars" />
+                        </a>
+                        <div class="label_text">
+                            <h2>Cricket</h2>
+                            <p class="mb-4"></p>
+                            <a href="/"><button class="btn-custom">find out more</button></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <img src="assets/images/slide-3.png" class="downBars" />
+                        </a>
+                        <div class="label_text">
+                            <h2>Basketball</h2>
+                            <p class="mb-4"></p>
+                            <a href="/"><button class="btn-custom">play now</button></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- categories -->
+        <div class="categories" id="categories">
+            <a routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active">
+                <i class="far fa-globe-americas"></i> <span>All Sports</span>
+            </a>
+
+            <a routerLink="/1" routerLinkActive="active">
+                <i class="far fa-futbol" aria-hidden="true"></i>
+                <span>Football</span>
+            </a>
+
+            <a routerLink="/2" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active">
+                <i class="far fa-cricket" aria-hidden="true"></i>
+                <span>Cricket</span>
+            </a>
+
+            <a routerLink="/3" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active">
+                <i class="far fa-shuttlecock" aria-hidden="true"></i>
+                <span>Badminton</span>
+            </a>
+
+            <a routerLink="/4" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active">
+                <i class="far fa-chess" aria-hidden="true"></i> <span>Chess</span>
+            </a>
+
+            <a routerLink="/5" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active">
+                <i class="far fa-basketball-ball" aria-hidden="true"></i>
+                <span>Basketball</span>
+            </a>
+
+            <a routerLink="/6" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active">
+                <i class="far fa-field-hockey" aria-hidden="true"></i>
+                <span>Hockey</span>
+            </a>
+        </div>
+        <!-- live match table -->
+        <div *ngFor="let item of sports.filtered_sports.liveList"
+            class="table-parent table-responsive d-sm-block d-none">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="text-center">
+                            <span v-html="item.game_category.icon"></span>
+                        </th>
+                        <th class="col-5">
+                            <span>
+                                {{item.game_tournament.name}}
+                                <span v-if="item.name">- {{item.name}} </span>
+                            </span>
+                        </th>
+
+                        <th class="col-2" *ngFor="let question of take3Questions(item.questions)">
+                            <div class="d-flex justify-content-evenly">
+                                <span>1</span>
+                                <span>{{question.name}}</span>
+                                <span>2</span>
+                            </div>
+                        </th>
+
+                            <th class="col-2" *ngFor="let p of emptyArray(3-item.questions.length)" >
+                                <div class="d-flex justify-content-evenly">
+                                    <span>1</span>
+                                    <span *ngIf="p == 1">X</span>
+                                    <span *ngIf="p == 2">2X</span>
+                                    <span *ngIf="p == 3">3X</span>
+                                    <span>2</span>
+                                </div>
+                            </th>
+                        <th class="col-1 text-center">More</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center"></td>
+                        <td>
+                            <p>
+                                <span>
+                                    <img [src]="item.team1_img" alt=".." />
+                                    {{ item.team1 }}
+                                </span>
+                            </p>
+                            <p>
+                                <span>
+                                    <img [src]="item.team2_img" alt=".." />
+                                    {{ item.team2 }}
+                                </span>
+                            </p>
+                            <p>
+                                <span class="float-end">
+                                    <a href="" class="me-2 d-none">
+                                        <i class="fal fa-chart-bar"></i>
+                                    </a>
+                                </span>
+                            </p>
+                        </td>
+
+                        <td *ngFor="let question of take3Questions(item.questions)">
+                            <div class="d-flex justify-content-evenly w-100">
+                                <button type="button" *ngFor="let option of question.options"
+                                    [attr.disabled]="option.is_unlock_question == 1 ? true : null"
+                                    [ngClass]="option.is_unlock_question == 1 || option.is_unlock_match == 1 ? 'disabled' : ''"
+                                    (click)="addToSlip(option)">
+                                    <i *ngIf="option.is_unlock_question == 1 || option.is_unlock_match == 1"
+                                        class="fas fa-lock-alt"></i>
+                                    {{ option.ratio}}
+                                </button>
+                            </div>
+
+                            <div *ngIf="question.options.length == 0" class="d-flex justify-content-evenly w-100">
+                                <button type="button" class="disabled downgrade">-</button>
+                                <button type="button" class="disabled downgrade">-</button>
+                            </div>
+                        </td>
+
+                            <td *ngFor="let item of emptyArray(3 - item.questions.length)">
+                                <div class="d-flex justify-content-evenly w-100">
+                                    <button type="button" class="disabled downgrade">
+                                        -
+                                    </button>
+                                    <button type="button" class="disabled downgrade">
+                                        -
+                                    </button>
+                                </div>
+                            </td>
+                        <td>
+                            <button type="button" *ngIf="!item.questions.length" disabled class="disabled">
+                                -
+                            </button>
+                            <button (click)="goMatch(item)" *ngIf="item.questions.length" type="button">
+                                +{{ item.questions.length }}
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Upcoming match table -->
+        <div *ngFor="let item of sports.filtered_sports.upcomingList"
+            class="table-parent table-responsive d-sm-block d-none">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="text-center">
+                            <span v-html="item.game_category.icon"></span>
+                        </th>
+                        <th class="col-5">
+                            <span>
+                                {{item.game_tournament.name}}
+                                <span v-if="item.name">- {{item.name}} </span>
+                            </span>
+                        </th>
+
+                        <th class="col-2" *ngFor="let question of take3Questions(item.questions)">
+                            <div class="d-flex justify-content-evenly">
+                                <span>1</span>
+                                <span>{{question.name}}</span>
+                                <span>2</span>
+                            </div>
+                        </th>
+
+                            <th class="col-2" *ngFor="let p of emptyArray(3 - item.questions.length)">
+                                <div class="d-flex justify-content-evenly">
+                                    <span>1</span>
+                                    <span *ngIf="p == 1">X</span>
+                                    <span *ngIf="p == 2">2X</span>
+                                    <span *ngIf="p  == 3">3X</span>
+                                    <span>2</span>
+                                </div>
+                            </th>
+                        <th class="col-1 text-center">More</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center"></td>
+                        <td>
+                            <p>
+                                <span>
+                                    <img [src]="item.team1_img" alt=".." />
+                                    {{ item.team1 }}
+                                </span>
+                            </p>
+                            <p>
+                                <span>
+                                    <img [src]="item.team2_img" alt=".." />
+                                    {{ item.team2 }}
+                                </span>
+                            </p>
+                            <p>
+                                <span class="float-end">
+                                    <a href="" class="me-2 d-none">
+                                        <i class="fal fa-chart-bar"></i>
+                                    </a>
+                                </span>
+                            </p>
+                        </td>
+
+                        <td *ngFor="let question of item.questions">
+                            <div class="d-flex justify-content-evenly w-100">
+                                <button type="button" *ngFor="let option of question.options"
+                                    [title]="option.option_name"
+                                    [attr.disabled]="option.is_unlock_question == 1 || option.is_unlock_match == 1 ? true : null"
+                                    [ngClass]="(option.is_unlock_question == 1 || option.is_unlock_match == 1) ?' disabled' : ''"
+                                    (click)="addToSlip(option)">
+                                    <i v-if="option.is_unlock_question == 1 || option.is_unlock_match == 1"
+                                        class="fas fa-lock-alt"></i>
+                                    {{ option.ratio}}
+                                </button>
+                            </div>
+
+                            <div *ngIf="question.options.length == 0" class="d-flex justify-content-evenly w-100">
+                                <button type="button" class="disabled downgrade">-</button>
+                                <button type="button" class="disabled downgrade">-</button>
+                            </div>
+                        </td>
+
+                            <td *ngFor="let index of emptyArray(3 - item.questions.length )">
+                                <div class="d-flex justify-content-evenly w-100">
+                                    <button type="button" class="disabled downgrade">
+                                        -
+                                    </button>
+                                    <button type="button" class="disabled downgrade">
+                                        -
+                                    </button>
+                                </div>
+                            </td>
+                        <td>
+                            <button type="button" *ngIf="!item.questions.length" disabled class="disabled">
+                                -
+                            </button>
+                            <button (click)="goMatch(item)" *ngIf="item.questions.length" type="button">
+                                +{{ item.questions.length }}
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="live-matches d-sm-none" *ngIf="showType == 'live'">
+            <h5>Live Matches</h5>
+            <div class="live-matches-slider owl-carousel">
+                <div class="box" *ngFor="let item of sports.filtered_sports.liveList">
+                    <h5 class="mb-3">{{ item.game_tournament.name }}</h5>
+                    <div class="row d-flex justify-content-around align-items-center">
+                        <div class="col-3 team">
+                            <img class="img-fluid" [src]="item.team1_img" alt="..." />
+                            <p>{{ item.team1}}</p>
+                        </div>
+                        <div class="col-6">
+                            <span>{{item.name}} </span>
+                            <h5 *ngIf="item.questions.length ">
+                                {{ item.questions[0]?.name}}
+                            </h5>
+                            <button class="btn-custom w-75 my-2" (click)="goMatch(item)">
+                                See More
+                            </button>
+                        </div>
+                        <div class="col-3 team">
+                            <img class="img-fluid" [src]="item.team2_img" alt="..." />
+                            <p>{{ item.team2}}</p>
+                        </div>
+
+                        <div class="col-12 align-self-end">
+                            <div *ngIf="item.questions.length" class="d-flex justify-content-between">
+                                <button class="btn-light" type="button"
+                                    *ngFor="let option of item.questions[0]?.options"
+                                    [ngClass]="option.is_unlock_question == 1 || option.is_unlock_match == 1 ? 'disabled' : ''"
+                                    [disabled]="option.is_unlock_question == 1 || option.is_unlock_match == 1 ? true : null"
+                                    [title]="option.option_name" (click)="addToSlip(option)">
+                                    <i *ngIf="option.is_unlock_question == 1 || option.is_unlock_match == 1"
+                                        class="fas fa-lock-alt"></i>
+                                    {{ option.ratio }}
+                                </button>
+                            </div>
+
+                            <div *ngIf="!item.questions.length" class="d-flex justify-content-between">
+                                <button type="button" disabled class="btn-light disabled downgrade-mobile">
+                                    -
+                                </button>
+                                <button type="button" disabled class="btn-light disabled downgrade-mobile">
+                                    -
+                                </button>
+                                <button type="button" disabled class="btn-light disabled downgrade-mobile">
+                                    -
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="live-matches d-sm-none" *ngIf="showType == 'upcoming'">
+            <h5>Upcoming Matches</h5>
+            <div class="live-matches-slider owl-carousel">
+                <div class="box" *ngFor="let item of sports.filtered_sports.upcomingList">
+                    <h5 class="mb-3">{{ item.game_tournament.name }}</h5>
+                    <div class="row d-flex justify-content-around align-items-center">
+                        <div class="col-3 team">
+                            <img class="img-fluid" [src]="item.team1_img" alt="..." />
+                            <p>{{item.team1}}</p>
+                        </div>
+                        <div class="col-6">
+                            <span>{{item.name}} </span>
+                            <h5 *ngIf="item.questions.length ">
+                                {{ item.questions[0].name}}
+                            </h5>
+                            <button class="btn-custom w-75 my-2" (click)="goMatch(item)">
+                                See More
+                            </button>
+                        </div>
+                        <div class="col-3 team">
+                            <img class="img-fluid" [src]="item.team2_img" alt="..." />
+                            <p>{{ item.team2}}</p>
+                        </div>
+
+                        <div class="col-12 align-self-end">
+                            <div *ngIf="item.questions.length" class="d-flex justify-content-between">
+                                <button class="btn-light" type="button" *ngFor="let option of item.questions[0].options"
+                                    [class]="option.is_unlock_question == 1 || option.is_unlock_match == 1 ? 'disabled' : ''"
+                                    [disabled]="option.is_unlock_question == 1 || option.is_unlock_match == 1 ? true : null "
+                                    [title]="option.option_name" (click)="addToSlip(option)">
+                                    <i *ngIf="option.is_unlock_question == 1 || option.is_unlock_match == 1"
+                                        class="fas fa-lock-alt"></i>
+                                    {{ option.ratio }}
+                                </button>
+                            </div>
+
+                            <div *ngIf="!item.questions.length" class="d-flex justify-content-between">
+                                <button type="button" disabled class="btn-light disabled downgrade-mobile">
+                                    -
+                                </button>
+                                <button type="button" disabled class="btn-light disabled downgrade-mobile">
+                                    -
+                                </button>
+                                <button type="button" disabled class="btn-light disabled downgrade-mobile">
+                                    -
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

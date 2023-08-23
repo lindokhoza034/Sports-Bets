@@ -1,0 +1,50 @@
+<section class="login-section">
+    <div class="container-fluid h-100">
+        <div class="row h-100">
+            <div class="col-lg-6 p-0">
+                <div class="text-box h-100">
+                    <div class="overlay h-100">
+                        <div class="text">
+                            <h2>Make a Deposit</h2>
+                            <a routerLink="/">back to home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-wrapper d-flex align-items-center h-100">
+                    <form method="post" (submit)="add()" [formGroup]="form">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <h4>Balance : {{transaction.balance.toFixed(2)}}</h4>
+                            </div>
+                            <div class="input-box col-12">
+                                <input type="number" name="amount" value="" class="form-control" min="10" required
+                                    placeholder="Amount (min = 10)" formControlName="amount" />
+                            </div>
+                            <div class="input-box col-12">
+                                <input type="text" name="name" value="" class="form-control" required
+                                    placeholder="Name on Card" formControlName="nameOnCard" />
+                            </div>
+                            <div class="input-box col-12">
+                                <input type="text" name="cardNumber" value="" class="form-control" required
+                                    pattern="^\d{4}-\d{4}-\d{4}-\d{4}$" formControlName="cardNumber"
+                                    placeholder="Card NUmber (0000-0000-0000-0000)" />
+                            </div>
+                            <div class="input-box col-6">
+                                <input type="text" name="expiry" value="" class="form-control" required formControlName="expiryDate"
+                                    pattern="^(([1]{1}[0-2]{1})|(0[1-9]{1}))-\d{4}$" placeholder="Expiry (MM-YYYY)" />
+                            </div>
+                            <div class="input-box col-6">
+                                <input type="text" name="cvc" value="" class="form-control" required pattern="^\d{3}$"
+                                    placeholder="CVC/CVV (000)" formControlName="cvc" />
+                            </div>
+
+                        </div>
+                        <button class="btn-custom w-100 mt-2">Deposit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
